@@ -4,7 +4,7 @@ import { Document } from 'mongoose';
 @Schema()
 export class TaskSchema extends Document {
   @Prop({ required: false })
-  id: string;
+  id: number;
 
   @Prop({ required: false })
   title?: string;
